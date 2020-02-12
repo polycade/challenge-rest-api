@@ -45,6 +45,8 @@ Build a REST API that will allow Polycade to manage pricing individually on mach
     - if the machine isn't found by `machine-id` it responds with not found
 - Tests
   - Each endpoint should have its own test
+- Database
+  - Use PostgreSQL to store data about machines and prices
 
 ## Instructions
 
