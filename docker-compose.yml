@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+    postgres:
+        image: "postgres:11"
+        container_name: "polycade-challengedb"
+        environment:
+            - POSTGRES_USER=polycade
+            - POSTGRES_PASSWORD=polycade
+            - POSTGRES_DB=polycade
+        ports:
+            - "5435:5432"
+        volumes:
+            - polycade-vol:/var/lib/postgresql/data
+volumes:
+    polycade-vol:
